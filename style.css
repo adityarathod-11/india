@@ -1,0 +1,223 @@
+/* Reset body defaults */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color:  rgba(0, 0, 0, 0.281);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+    transition: background-color 0.5s ease;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+header:hover {
+    background-color: black;
+}
+
+#header-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+}
+
+.content1 h1 {
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 24px;
+    margin: 0;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.content2 > p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.content2 > p:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+#main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Content that appears above the video */
+#main .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+#diavorsity {
+    width: 100%;
+    height: 600px;
+    padding: 30px 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url('https://images5.alphacoders.com/111/1113568.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.diavorsity-section.intro {
+    background-color: transparent;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.diavorsity-section.intro h2 {
+    color: #006400;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.diavorsity-section.intro p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.card {
+    width: 24%;
+    margin: 1%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: #f0fff0;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2);
+    border-color: #009900;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card p {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+}
+
+#spirituality {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 30px 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url('https://images.pexels.com/photos/8112524/pexels-photo-8112524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#spirituality .card {
+    width: 30%;
+    margin: 1%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+#Technologies {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 30px 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url('https://images.pexels.com/photos/8112524/pexels-photo-8112524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#innovation {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 30px 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url('innovation.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
