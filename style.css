@@ -82,8 +82,10 @@ a > p:hover {
 /* Main Content */
 #main {
     position: relative;
-    width: 100%;
+    width: 100%; /* Fixed width */
     height: 100vh;
+    margin: 0 auto; /* Center horizontally */
+    overflow: hidden;
 }
 
 #main video {
