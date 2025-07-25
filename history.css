@@ -1,11 +1,18 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+/* Global Reset */
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Header Styles */
 header {
     background-color:  rgba(0, 0, 0, 0.281);
@@ -35,6 +42,15 @@ header:hover {
     align-items: center;
 }
 
+.content h1{
+    font-size: 70px;
+    letter-spacing: 20px;
+}
+.content p{
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
 .content1 {
     display: flex;
     align-items: center;
@@ -61,20 +77,17 @@ header:hover {
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
 a{
     text-decoration: none;
     color: white
 }
 
-
-
 a > p:hover {
     color: #ffcc00;
 }
-#hist{
-  width: 100%;
-  height: 300px;
-}
+
+/* History Hero Section */
 .history {
   width: 100%;
   height: 695px;
@@ -82,12 +95,12 @@ a > p:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#content-history{
+
+#content-history {
   width: 100%;
   height: 100%;
   display: flex;
@@ -95,52 +108,61 @@ a > p:hover {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 #content-history h1 {
   font-size: 112px;
   color: #ffffff;
   margin-bottom: 15px;
   text-align: center;
-  justify-content: center;
 }
 
-#hist{
+/* History Text Section */
+#hist {
   width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(https://static.vecteezy.com/system/resources/previews/038/957/957/non_2x/ai-generated-old-paper-canvas-texture-grunge-background-photo.jpg);
+  background-image: url('https://static.vecteezy.com/system/resources/previews/038/957/957/non_2x/ai-generated-old-paper-canvas-texture-grunge-background-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-#hist p{
+
+#hist p {
   width: 80%;
   text-align: justify;
   font-size: 30px;
   color: rgb(0, 0, 0);
 }
 
-#flags-id{
+/* Flags Heading */
+#flags-id {
   width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 10px;
 }
-#flags-id h1{
+
+#flags-id h1 {
   font-size: 50px;
 }
+
+/* Section Container */
 .container {
-  width: 100%;
-  height: 400px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
-  justify-content: left;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  padding: 0 10px;
 }
 
+/* Section Card */
 .section {
   background-color: #31313110;
   border-radius: 12px;
@@ -175,46 +197,53 @@ a > p:hover {
   line-height: 1.5;
 }
 
- #details {
-      width: 100%;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 15px;
-    }
+/* Details Section */
+#details {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+}
 
-    #details h1 {
-      text-align: center;
-      color: #2c3e50;
-      font-size: 70px;
-      letter-spacing: 10px;
-    }
+#details h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 70px;
+  letter-spacing: 10px;
+}
 
-    #details p {
-      font-size: 1.1em;
-      line-height: 1.8;
-      color: #333333;
-    }
+#details p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333333;
+}
 
-    #details strong {
-      color: #1e88e5;
-    }
+#details strong {
+  color: #1e88e5;
+}
 
-    #maps{
-      display: flex;
-      flex-direction: column;
-    }
+/* Maps Section */
+#maps {
+  display: flex;
+  flex-direction: column;
+}
 
-    #maps-content{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-    #maps-content .section{
-      width: 20%;
-      height: 450px;
-    }
+#maps-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
 
-  #constitution {
+#maps-content .section {
+  width: 250px;
+  height: 450px;
+}
+
+/* Constitution Section */
+#constitution {
   max-width: 800px;
   margin: 50px auto;
   background-color: #fff;
@@ -238,9 +267,4 @@ a > p:hover {
 #constitution p {
   font-size: 1.1em;
   line-height: 1.8;
-  color: #333;
-}
-
-#content-detail{
-  background : linear-gradient(orange,white,green);
-}
+  color: #333
