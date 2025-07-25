@@ -5,30 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Our Team</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial';
+            background:linear-gradient(black,black, white);
         }
-        
-        
-        
+
+        header {
+    background-color:  rgba(0, 0, 0, 0.281);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+    transition: background-color 0.5s ease;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+header:hover {
+    background-color: black;
+}
+
+#header-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h1{
+    font-size: 70px;
+    letter-spacing: 20px;
+}
+.content p{
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+}
+
+.content1 h1 {
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 24px;
+    margin: 0;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.content2 > p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+a > p:hover {
+    color: #ffcc00;
+}
+       
+/*************/
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            width: 100%;
             padding: 40px 20px;
         }
-        
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
+
+                
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
             color: #c8d6e4;
+            letter-spacing: 10px;
+            
         }
         
         p.info{
@@ -36,6 +104,8 @@
             margin: 0 auto;
             font-size: 1.1rem;
             color: #dbd9d9;
+            text-align: center;
+            
         }
         
         .team-section {
@@ -47,6 +117,7 @@
             font-size: 2rem;
             margin-bottom: 40px;
             color: #c8d6e4;
+            letter-spacing: 10px;
         }
         
         
@@ -54,7 +125,7 @@
         .team {
             width: 250px;
             padding: 20px;
-            background: rgb(254, 251, 251);
+            background: linear-gradient(white,black);
             border-radius: 10px;
             
         }
@@ -74,7 +145,7 @@
         h3 {
             font-size: 1.3rem;
             margin-bottom: 10px;
-            color: #475664;
+            color: #ffffff;
         }
         
         .position {
@@ -87,33 +158,70 @@
             display: inline-block;
             margin-top: 15px;
             text-decoration: none;
-            color: rgb(103, 103, 199);
+            color: blue;
             font-weight: bold;
+            border: none;
+            padding: 10px;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.3s ease;
         }
+
+        .linkdin:hover{
+            background-color: rgba(40, 40, 40, 0.266);
+        }
+
         .teams{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 40px;
         }
-        body {
-            background: linear-gradient(black,black,white);
-            color: #333;
-            line-height: 1.6;
+        #about-info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+            row-gap: 10px;
         }
-       
+
         
   
     </style>
 </head>
 <body>
+    <header>
+        <div id="header-2">
+            <div class="content1">
+                <h1>SWADESH</h1>
+
+            </div>
+            <div class="content2">
+                <a href="index.html">
+                    <P>Home</P>
+                </a>
+                <a href="history.html">
+                    <P>History</P>
+                </a>
+                <a href="unheard.html">
+                    <P>Unheard Innovations</P>
+                </a>
+                <a href="aboutus.html">
+                    <P>About us</P>
+                </a>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
-        <header>
+        <div id="about-info">
             <h1>About Us</h1>
             <p class="info">
                 We are young and passionate fullstack developer dedicated to build website with creativity  and  curiosity fuels our constant exploration of new technologies and better solutions.
             </p>
-        </header>
+        </div>
         
         <div class="team-section">
             <h2>Meet Our Team</h2>
@@ -159,5 +267,7 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>
